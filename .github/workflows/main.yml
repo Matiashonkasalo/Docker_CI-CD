@@ -24,7 +24,7 @@ jobs:
     - name: Build and push Docker image
       uses: Docker/build-push-action@v6
       with:
-	platforms: linux/amd64,linux/arm64
+        platforms: linux/amd64,linux/arm64
         context: .
         push: true
         tags: user/app:latest 
